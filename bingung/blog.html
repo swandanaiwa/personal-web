@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <title>Creating Blog Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+      <div class="left-side">
+        <a href="home.html">
+          <img src="assets/logo.png" alt="logo" />
+        </a>
+        <ol>
+          <li>
+            <a href="home.html">Home</a>
+          </li>
+          <li>
+            <a href="blog.html" class="list-active">My Project</a>
+          </li>
+        </ol>
+      </div>
+      <div class="right-side">
+        <a href="contact.html"> Contact Me </a>
+      </div>
+    </nav>
+
+    <!-- Blog -->
+    <!-- Form -->
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="addBlog(event)">
+            <h1>ADD MY PROJECT</h1>
+            <div>
+              <label for="input-blog-title">Project Name</label>
+              <input id="input-blog-title" />
+            </div>
+            <div class="input-blog-date">
+              <div class="start-date">
+                <label for="input-start-date">Start Date</label>
+                <input type="date" id="input-start-date">
+              </div>
+              <div class="end-date">
+                <label for="input-end-date">End Date</label>
+                <input type="date" id="input-end-date">
+              </div>
+            </div>
+            <div>
+              <label for="input-blog-content">Description</label>
+              <textarea id="input-blog-content"></textarea>
+            </div>
+            <label>Technologies</label>
+            <div class="input-blog-technologies">
+              <div class="left-tech">
+                <label for="node-js">
+                  <input type="checkbox" name="node-js" id="node-js" style="margin-left: -10; width: 30;">
+                  <p>Node JS</p> 
+                </label>
+                <label for="react-js">
+                  <input type="checkbox" name="react-js" id="react-js" style="margin-left: -10; width: 30;">
+                  <p>React JS</p> 
+                </label>
+              </div>
+              <div class="right-tech">
+                <label for="next-js">
+                  <input type="checkbox" name="next-js" id="next-js" style="margin-left: 50; width: 30;">
+                  <p>Next JS</p> 
+                </label>
+                <label for="typescript">
+                  <input type="checkbox" name="typescript" id="typescript" style="margin-left: 50; width: 30;">
+                  <p>Typescript</p> 
+                </label>
+              </div>
+            </div>
+            <div>
+              <label>Upload Image</label>
+              <div class="input-blog-image-group">
+                <label for="input-blog-image">
+                  <p>choose</p>
+                  <img src="assets/file.png" alt="file" />
+                </label>
+                <input type="file" id="input-blog-image" hidden />
+              </div>
+            </div>
+            <div class="button-group">
+              <button>submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="project-ku">My Project</div>
+      <div id="contents" class="my-project">
+        <!-- dynamic content would be here -->
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="assets/blog3.jpg" alt="">
+          </div>
+          <div class="blog-title">
+            <h3>
+              <a href="blog-detail.html" target="_blank"
+              >Dumbways Mobile Apps - 2021</a>
+            </h3>
+          </div>
+          <div class="blog-duration">
+            <h5>durasi : 2 bulan</h5>
+          </div>
+          <div class="blog-content">
+            <p>
+              App that used for Dumbways student, it was deployed and can downloaded on
+              Playstore. Happy Download
+            </p>
+          </div>
+          <div class="blog-tech">
+            <img src="assets/nodejs.png" alt="" width="25" height="25">
+            <img src="assets/reactjs.png" alt="" width="25" height="25">
+            <img src="assets/typescript.png" alt="" width="25" height="25">
+          </div>
+          <div class="blog-manage">
+            <div class="blog-edit">
+              <p>edit</p>
+            </div>
+            <div class="blog-delete">
+              <p>delete</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="blog.js"></script>
+  </body>
+</html>

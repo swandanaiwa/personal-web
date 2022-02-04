@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Contact-Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>    
+<body style="background-color: rgb(211, 214, 221);">
+    <!--nav start-->
+    <nav>
+        <div class="left-side">
+            <a href="home.html">
+                <img src="assets/logo.png" alt="my logo">
+            </a>
+        
+            <ol>
+                <li>
+                    <a href="home.html" target="blank" >Home</a>
+                </li>
+                <li>
+                    <a href="blog.html" target="blank" >My Project</a>
+                </li>
+            </ol>
+        <div>
+
+        <div class="right-side">
+            <a href="contact-me.html">Contact Me</a>
+        </div>
+    </nav>
+    <!--nav end-->
+
+    <!-- contact start -->
+    <center>
+    <div class="container">
+        <div class="heading">
+            <h1>GET IN TOUCH</h1>
+        </div>
+        <!-- Forms get in touch -->
+        <div class="forms">
+            <form action="">
+                <div class="name">
+                    <label for="name">Name</label>
+                    <input type="text" required id="name">
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="phone">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone">
+                </div>
+                <div class="subject">
+                    <label for="subject">Subject</label>
+                    <select id="subject">
+                        <option hidden disabled selected value></option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="meeting">Meeting</option>
+                        <option value="smalltalk">Small Talk</option>
+                    </select>
+                </div>
+                <div class="message">
+                    <label for="message">Your Message</label>
+                    <textarea id="message"></textarea>
+                </div>
+                <div class="submit">
+                    <button type="button" onclick="showData()">submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </center>
+    <!-- contact end -->
+
+    <!-- Javascript untuk funsi showData() -->
+    <script src="form.js" ></script>
+</body>
+</html>
